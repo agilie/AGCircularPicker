@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AGCircularPicker_Example' do
+  pod 'AGCircularPicker', :path => '../'
+
+  target 'AGCircularPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
