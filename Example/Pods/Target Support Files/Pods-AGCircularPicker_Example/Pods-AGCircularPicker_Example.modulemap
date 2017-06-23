@@ -1,0 +1,6 @@
+framework module Pods_AGCircularPicker_Example {
+  umbrella header "Pods-AGCircularPicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AGCircularPicker (0.1.0)
+
+DEPENDENCIES:
+  - AGCircularPicker (from `../`)
+
+EXTERNAL SOURCES:
+  AGCircularPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AGCircularPicker: f61875c378b6aed1106be33bc52061ee22d0c6a9
+
+PODFILE CHECKSUM: 464ce324935469b683c0e21e01bf79437a1fd5c2
+
+COCOAPODS: 1.2.1

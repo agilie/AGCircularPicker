@@ -1,25 +1,220 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OZ6-gs-pJV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AGCircularPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Wr-WU1">
+                                <rect key="frame" x="16" y="258.5" width="343" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83G-pd-aUP">
+                                        <rect key="frame" x="40" y="0.0" width="263" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Jmf-Qi-Uof"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Single Item Picker">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cUD-It-BLA" kind="show" id="fcJ-a7-4bT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-nU-jjz">
+                                        <rect key="frame" x="40" y="80" width="263" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="XyP-QM-n36"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Multi-item picker">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="QOq-ez-yR9" kind="show" id="gkW-3p-eih"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fQz-nU-jjz" secondAttribute="bottom" id="3Ll-xf-4JN"/>
+                                    <constraint firstItem="83G-pd-aUP" firstAttribute="top" secondItem="nlG-Wr-WU1" secondAttribute="top" id="Bse-ER-kt3"/>
+                                    <constraint firstAttribute="trailing" secondItem="83G-pd-aUP" secondAttribute="trailing" constant="40" id="CsJ-jU-QXi"/>
+                                    <constraint firstAttribute="trailing" secondItem="fQz-nU-jjz" secondAttribute="trailing" constant="40" id="RcB-rk-PLa"/>
+                                    <constraint firstItem="83G-pd-aUP" firstAttribute="leading" secondItem="nlG-Wr-WU1" secondAttribute="leading" constant="40" id="hwz-lW-bDe"/>
+                                    <constraint firstAttribute="height" constant="150" id="sSP-0i-NvV"/>
+                                    <constraint firstItem="fQz-nU-jjz" firstAttribute="leading" secondItem="nlG-Wr-WU1" secondAttribute="leading" constant="40" id="x1w-Gi-0PQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nlG-Wr-WU1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="42A-Aj-aCb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nlG-Wr-WU1" secondAttribute="trailing" id="Jtv-Ky-8cb"/>
+                            <constraint firstItem="nlG-Wr-WU1" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="zTA-fO-ZGK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Y0b-Vn-7OB"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="874" y="-317"/>
+        </scene>
+        <!--Single Picker View Controller-->
+        <scene sceneID="tB1-e4-62K">
+            <objects>
+                <viewController id="cUD-It-BLA" customClass="SinglePickerViewController" customModule="AGCircularPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c9y-Df-beG"/>
+                        <viewControllerLayoutGuide type="bottom" id="E82-1U-5Eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nzj-MK-T0V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDt-5W-3H4">
+                                <rect key="frame" x="76" y="597" width="223" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="meR-XV-FUn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="cUD-It-BLA" eventType="touchUpInside" id="GId-A3-1m3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMG-c7-O4U">
+                                <rect key="frame" x="36" y="60" width="303" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v47-aZ-F3C" customClass="AGCircularPickerView" customModule="AGCircularPicker">
+                                <rect key="frame" x="67" y="208" width="240" height="250"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2dX-pA-yU5"/>
+                                    <constraint firstAttribute="width" constant="240" id="Dm1-9f-QU5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMG-c7-O4U" firstAttribute="top" secondItem="c9y-Df-beG" secondAttribute="bottom" constant="40" id="0ah-he-YVZ"/>
+                            <constraint firstItem="E82-1U-5Eh" firstAttribute="top" secondItem="qDt-5W-3H4" secondAttribute="bottom" constant="20" id="8MS-8t-DGh"/>
+                            <constraint firstItem="v47-aZ-F3C" firstAttribute="centerX" secondItem="Nzj-MK-T0V" secondAttribute="centerX" id="B1j-vw-T5a"/>
+                            <constraint firstItem="QMG-c7-O4U" firstAttribute="leading" secondItem="Nzj-MK-T0V" secondAttribute="leadingMargin" constant="20" id="HmC-el-Bea"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QMG-c7-O4U" secondAttribute="trailing" constant="20" id="WLQ-gb-tXP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qDt-5W-3H4" secondAttribute="trailing" constant="60" id="YYI-If-vmJ"/>
+                            <constraint firstItem="qDt-5W-3H4" firstAttribute="leading" secondItem="Nzj-MK-T0V" secondAttribute="leadingMargin" constant="60" id="cjP-Yz-uNq"/>
+                            <constraint firstItem="v47-aZ-F3C" firstAttribute="centerY" secondItem="Nzj-MK-T0V" secondAttribute="centerY" id="gkp-Tf-iFF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="v47-aZ-F3C" id="KeR-oA-S7S"/>
+                        <outlet property="titleLabel" destination="QMG-c7-O4U" id="dZd-ro-Osx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAd-2C-rNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="-622"/>
+        </scene>
+        <!--Multi Picker View Controller-->
+        <scene sceneID="xre-rO-e6m">
+            <objects>
+                <viewController id="QOq-ez-yR9" customClass="MultiPickerViewController" customModule="AGCircularPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2rS-JC-aQ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="62R-Ks-hfx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4y9-iw-SBz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-pH-nd5" customClass="AGCircularPicker" customModule="AGCircularPicker">
+                                <rect key="frame" x="0.0" y="193.5" width="375" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="3i1-ne-oyg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPK-2O-1LT">
+                                <rect key="frame" x="36" y="60" width="303" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fT-ZE-PYd">
+                                <rect key="frame" x="76" y="597" width="223" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xbp-br-1gt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="QOq-ez-yR9" eventType="touchUpInside" id="f2B-lf-TtG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.086274509799999996" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GPK-2O-1LT" firstAttribute="top" secondItem="2rS-JC-aQ4" secondAttribute="bottom" constant="40" id="3E0-rm-png"/>
+                            <constraint firstItem="8fT-ZE-PYd" firstAttribute="leading" secondItem="4y9-iw-SBz" secondAttribute="leadingMargin" constant="60" id="7gC-DO-a18"/>
+                            <constraint firstItem="62R-Ks-hfx" firstAttribute="top" secondItem="8fT-ZE-PYd" secondAttribute="bottom" constant="20" id="AjC-9n-wrl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GPK-2O-1LT" secondAttribute="trailing" constant="20" id="PR9-mq-EKo"/>
+                            <constraint firstItem="wcs-pH-nd5" firstAttribute="leading" secondItem="4y9-iw-SBz" secondAttribute="leading" id="amL-ys-IaY"/>
+                            <constraint firstItem="GPK-2O-1LT" firstAttribute="leading" secondItem="4y9-iw-SBz" secondAttribute="leadingMargin" constant="20" id="crR-Fu-4AF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8fT-ZE-PYd" secondAttribute="trailing" constant="60" id="dHN-AD-ZvS"/>
+                            <constraint firstAttribute="trailing" secondItem="wcs-pH-nd5" secondAttribute="trailing" id="eVW-jd-LlM"/>
+                            <constraint firstItem="wcs-pH-nd5" firstAttribute="centerY" secondItem="4y9-iw-SBz" secondAttribute="centerY" id="rZb-gs-E7q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularPicker" destination="wcs-pH-nd5" id="Lk4-mh-sBK"/>
+                        <outlet property="titleLabel" destination="GPK-2O-1LT" id="cx6-r4-PMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dt6-mQ-1mN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="54"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jZU-0F-WGx">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="OZ6-gs-pJV" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="nQu-dI-V5L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Qgu-Tw-FjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzr-qt-O2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="-317"/>
         </scene>
     </scenes>
 </document>

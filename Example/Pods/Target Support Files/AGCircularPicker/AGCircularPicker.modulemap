@@ -1,0 +1,6 @@
+framework module AGCircularPicker {
+  umbrella header "AGCircularPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
