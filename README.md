@@ -28,10 +28,23 @@ pod "AGCircularPicker"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Author
+## Troubleshooting
+Problems? Check the [Issues](https://github.com/agilie/AGCircularPicker/issues) block
+to find the solution or create an new issue that we will fix asap. Feel free to contribute.
 
-savilov, sergii.avilov@agilie.com
+
+## Author
+This iOS visual component is open-sourced by [Agilie Team](https://www.agilie.com) <info@agilie.com>
+
+
+## Contributors
+- [Sergii Avilov](https://github.com/savilov)
+
+
+## Contact us
+<ios@agilie.com>
 
 ## License
 
-AGCircularPicker is available under the MIT license. See the LICENSE file for more info.
+AGCircularPicker is available under
+The [MIT](LICENSE.md) License (MIT) Copyright © 2017 [Agilie Team](https://www.agilie.com)
