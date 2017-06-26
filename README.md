@@ -75,7 +75,7 @@ Let's see how we can use it in practice. First we should link it in the Interfac
 @IBOutlet weak var circularPickerView: AGCircularPickerView!
 ```
 
-Then we hould define required options and setup control with it and delegate if needed
+Then we should define required options and setup control with it and delegate if needed
 
 ```swift
 override func viewDidLoad() {
