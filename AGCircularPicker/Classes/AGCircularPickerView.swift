@@ -208,8 +208,13 @@ open class AGCircularPickerView: UIView {
             
             let distance = centerPoint.distance(toPoint: touchPoint) - radius
             offset = min(maxOffset, max(distance, minOffset))
+            var correctedPoint = touchPoint
+            if distance > maxOffset {
+                let startPoint = CGPoint(x: centerPoint.x, y: centerPoint.y - radius - maxOffset + knobSize)
+                correctedPoint = startPoint.rotate(around: centerPoint, with: angle)
+            }
             
-            currentColor = gradientImageView.layer.colorOfPoint(point: touchPoint)
+            currentColor = gradientImageView.layer.colorOfPoint(point: correctedPoint)
             delegate?.circularPickerViewDidChangeValue(currentValue.round(), color: currentColor ?? UIColor.black, index: index)
         }
     }

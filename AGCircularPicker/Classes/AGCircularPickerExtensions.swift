@@ -130,7 +130,6 @@ extension CGPoint {
         if bearingDegrees > maxAngle {
             bearingDegrees = maxAngle - bearingDegrees
         }
-        print(bearingDegrees)
         return bearingDegrees
     }
     
@@ -200,9 +199,9 @@ extension UIImage {
 
 extension CALayer {
     
-    func colorOfPoint(point:CGPoint) -> UIColor {
+    func colorOfPoint(point:CGPoint) -> UIColor? {
         
-        let correctedPoint = CGPoint(x: min(max(0, point.x), bounds.width - 1), y: min(max(0, point.y), bounds.height - 1))
+        let correctedPoint = CGPoint(x: min(max(0, point.x), bounds.width - 2), y: min(max(0, point.y), bounds.height - 2))
         
         let pixel = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: 4)
         let colorSpace = CGColorSpaceCreateDeviceRGB()
@@ -215,7 +214,6 @@ extension CALayer {
         let green = CGFloat(pixel[1])
         let blue = CGFloat(pixel[2])
         let alpha = CGFloat(pixel[3])
-        
         let color:UIColor = UIColor(red: red / 255.0,
                                     green: green / 255.0,
                                     blue: blue / 255.0,
