@@ -20,8 +20,7 @@ pod "AGCircularPicker"
 
 ## Demo
 
-<img src="https://j.gifs.com/1jJy8m.gif" alt="Volume Picker Demo" width="240">
-<img src="https://j.gifs.com/58NDNK.gif" alt="Time Picker Demo" width="240">
+<img src="https://j.gifs.com/1jJy8m.gif" alt="Volume Picker Demo" width="240"> <img src="https://j.gifs.com/58NDNK.gif" alt="Time Picker Demo" width="240">
 
 ## Author
 
