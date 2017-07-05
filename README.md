@@ -7,8 +7,9 @@
 [![Version](https://img.shields.io/cocoapods/v/AGCircularPicker.svg?style=flat)](http://cocoapods.org/pods/AGCircularPicker)
 [![License](https://img.shields.io/cocoapods/l/AGCircularPicker.svg?style=flat)](http://cocoapods.org/pods/AGCircularPicker)
 [![Platform](https://img.shields.io/cocoapods/p/AGCircularPicker.svg?style=flat)](http://cocoapods.org/pods/AGCircularPicker)
+[!]https://img.shields.io/badge/Made%20by%20Agilie-*****-green.svg?style=flat)(https://www.agilie.com?utm_source=github&utm_medium=referral&utm_campaign=Git_Swift&utm_term=AGCircularPicker)
 
-We are pleased to offer you our new free lightweight plugin named Picker.
+We are pleased to offer you our new free lightweight plugin named AGCircularPicker.
 
 AGCircularPicker is helpful for creating a controller aimed to manage any calculated parameter. For example, it can be used as a countdown timer or for keeping the score in the game interface.
 
