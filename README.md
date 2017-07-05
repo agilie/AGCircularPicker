@@ -1,4 +1,4 @@
-<p align="center">
+# <p align="center">
 
 <img src="https://user-images.githubusercontent.com/4165054/27869128-a00026e2-61a7-11e7-978f-451bcd304a2b.png" alt="AGCircularPicker" title="AGCircularPicker" width="557"/>
 </p>
