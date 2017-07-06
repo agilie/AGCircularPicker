@@ -3,9 +3,15 @@
 <img src="https://user-images.githubusercontent.com/4165054/27869128-a00026e2-61a7-11e7-978f-451bcd304a2b.png" alt="AGCircularPicker" title="AGCircularPicker" width="557"/>
 </p>
 
+<p>
 
+</p>
 
 <p align="center">
+
+<a href="https://www.agilie.com?utm_source=github&utm_medium=referral&utm_campaign=Git_Swift&utm_term=AGCircularPicker">
+<img src="https://img.shields.io/badge/Made%20by%20Agilie-*****-green.svg?style=flat" alt="Made by Agilie">
+</a>
 
 <a href="https://travis-ci.org/savilov/AGCircularPicker">
 <img src="http://img.shields.io/travis/savilov/AGCircularPicker.svg?style=flat" alt="CI Status">
@@ -21,10 +27,6 @@
 
 <a href="http://cocoapods.org/pods/AGCircularPicker">
 <img src="https://img.shields.io/cocoapods/p/AGCircularPicker.svg?style=flat" alt="Platform">
-</a>
-
-<a href="https://www.agilie.com?utm_source=github&utm_medium=referral&utm_campaign=Git_Swift&utm_term=AGCircularPicker">
-<img src="https://img.shields.io/badge/Made%20by%20Agilie-*****-green.svg?style=flat" alt="Made by Agilie">
 </a>
 
 </p>
