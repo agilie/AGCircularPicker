@@ -110,7 +110,8 @@ This iOS visual component is open-sourced by [Agilie Team](https://www.agilie.co
 
 
 ## Contact us
-<ios@agilie.com>
+If you have any questions, suggestions or just need a help with web or mobile development, please email us at
+<ios@agilie.com>. You can ask us anything from basic to complex questions.
 
 ## License
 
