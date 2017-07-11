@@ -62,7 +62,7 @@ open class AGCenteredFlowLayout: UICollectionViewFlowLayout {
             let closest = layoutAttributes.sorted { abs($0.center.y - proposedContentOffsetCenterOrigin) < abs($1.center.y - proposedContentOffsetCenterOrigin) }.first ?? UICollectionViewLayoutAttributes()
             targetContentOffset = CGPoint(x: proposedContentOffset.x, y: floor(closest.center.y - midSide))
         }
-        selectedIndex = Int(targetContentOffset.x / itemSize.width)
+        selectedIndex = Int((targetContentOffset.x + minimumInteritemSpacing) / itemSize.width)
         return targetContentOffset
     }
 }

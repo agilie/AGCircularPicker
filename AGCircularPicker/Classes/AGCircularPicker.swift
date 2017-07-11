@@ -60,8 +60,8 @@ open class AGCircularPicker: UIView {
         return cView
     }()
     
-    override open func awakeFromNib() {
-        super.awakeFromNib()
+    open override func didMoveToSuperview() {
+        super.didMoveToSuperview()
         addAndPin(view: collectionView)
     }
     
