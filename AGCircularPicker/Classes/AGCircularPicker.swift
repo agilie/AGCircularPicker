@@ -28,6 +28,9 @@ open class AGCircularPicker: UIView {
         }
     }
     public var delegate: AGCircularPickerDelegate?
+    public var values: Array<AGColorValue> {
+        return currentValues
+    }
     
     fileprivate let defaultItemSize: CGFloat = 240.0
     fileprivate var currentValues: Array<AGColorValue> = []

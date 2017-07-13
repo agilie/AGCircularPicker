@@ -27,6 +27,9 @@ open class AGCircularPickerView: UIView {
             delegate?.circularPickerViewDidEndSetupWith(currentValue.round(), color: currentColor ?? UIColor.white, index: index)
         }
     }
+    public var value: AGColorValue {
+        return AGColorValue(value: currentValue.round(), color: currentColor ?? UIColor.white)
+    }
     
     //MARK: Private vars
     fileprivate var option: AGCircularPickerOption? {
