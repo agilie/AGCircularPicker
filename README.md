@@ -14,7 +14,7 @@
 </a>
 
 <a href="https://travis-ci.org/savilov/AGCircularPicker">
-<img src="http://img.shields.io/travis/savilov/AGCircularPicker.svg?style=flat" alt="CI Status">
+<img src="http://img.shields.io/travis/agilie/AGCircularPicker.svg?style=flat" alt="CI Status">
 </a>
 
 <a href="http://cocoapods.org/pods/AGCircularPicker">
