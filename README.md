@@ -37,6 +37,10 @@ AGCircularPicker is helpful for creating a controller aimed to manage any calcul
 
 AGCircularPicker can be customized to meet your individual requirements. The developer can set the number of the controllers and their design by selecting a color, gradient and other similar parameters. In addition, it’s possible to specify the transition type for showing controllers on the screen.
 
+## Link to Android repo
+
+Check out our Android [CircularPicker](https://github.com/agilie/CircularPicker)
+
 ## Installation
 
 AGCircularPicker is available through [CocoaPods](http://cocoapods.org). To install
