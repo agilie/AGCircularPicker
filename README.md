@@ -117,7 +117,7 @@ override func viewDidLoad() {
 }
 ```
 
-For more details prease see our example
+For more details please see our example
 
 ## Troubleshooting
 Problems? Check the [Issues](https://github.com/agilie/AGCircularPicker/issues) block
