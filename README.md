@@ -52,7 +52,7 @@ pod "AGCircularPicker"
 
 ## Demo
 
-<src="https://user-images.githubusercontent.com/4165054/28356889-3d13f6f0-6c72-11e7-922e-e6d8c11fdfc7.png" alt="Volume Picker Sreenshot" width ="240"> <img src="https://j.gifs.com/1jJy8m.gif" alt="Volume Picker Demo" width="240"> <img src="https://j.gifs.com/58NDNK.gif" alt="Time Picker Demo" width="240">
+<img src="https://user-images.githubusercontent.com/4165054/28356889-3d13f6f0-6c72-11e7-922e-e6d8c11fdfc7.png" alt="Volume Picker Sreenshot" width ="240"> <img src="https://j.gifs.com/1jJy8m.gif" alt="Volume Picker Demo" width="240"> <img src="https://j.gifs.com/58NDNK.gif" alt="Time Picker Demo" width="240">
 
 ## Example
 
