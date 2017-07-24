@@ -43,8 +43,6 @@ open class AGCircularPickerView: UIView {
                 gradientAngle = opt.gradientAngle
                 titleLabel.font = opt.titleFont
                 titleLabel.textColor = opt.titleColor
-                setupView()
-                setNeedsDisplay()
             }
         }
     }
@@ -113,9 +111,11 @@ open class AGCircularPickerView: UIView {
 
     public func setupPicker(delegate: AGCircularPickerViewDelegate?, option: AGCircularPickerOption, index: Int, value: Int = 0) {
         self.index = index
-        currentValue = CGFloat(value)
         self.option = option
+        currentValue = CGFloat(value)
         self.delegate = delegate
+        setupView()
+        setNeedsDisplay()
     }
 
     func setupView() {

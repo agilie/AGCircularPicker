@@ -20,7 +20,7 @@ class MultiPickerViewController: UIViewController {
         let hourColor2 = UIColor.rgb_color(r: 0, g: 135, b: 217)
         let hourColor3 = UIColor.rgb_color(r: 138, g: 28, b: 195)
         let hourTitleOption = AGCircularPickerTitleOption(title: "hours")
-        let hourValueOption = AGCircularPickerValueOption(minValue: 0, maxValue: 23, rounds: 2)
+        let hourValueOption = AGCircularPickerValueOption(minValue: 0, maxValue: 23, rounds: 2, initialValue: 15)
         let hourColorOption = AGCircularPickerColorOption(gradientColors: [hourColor1, hourColor2, hourColor3], gradientAngle: 20)
         let hourOption = AGCircularPickerOption(valueOption: hourValueOption, titleOption: hourTitleOption, colorOption: hourColorOption)        
         

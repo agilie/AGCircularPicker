@@ -83,15 +83,17 @@ public struct AGCircularPickerValueOption {
     var minValue: Int = 0
     var maxValue: Int = 100
     var rounds: Int = 1
+    var initialValue: Int = 0
     
-    public init(minValue: Int, maxValue: Int) {
-        self.init(minValue: minValue, maxValue: maxValue, rounds: AGCircularPickerValueOption.defaultRounds)
+    public init(minValue: Int, maxValue: Int, initialValue: Int = 0) {
+        self.init(minValue: minValue, maxValue: maxValue, rounds: AGCircularPickerValueOption.defaultRounds, initialValue: initialValue)
     }
     
-    public init(minValue: Int, maxValue: Int, rounds: Int) {
+    public init(minValue: Int, maxValue: Int, rounds: Int, initialValue: Int = 0) {
         self.minValue = minValue
         self.maxValue = maxValue
         self.rounds = rounds
+        self.initialValue = initialValue
     }
 
 }

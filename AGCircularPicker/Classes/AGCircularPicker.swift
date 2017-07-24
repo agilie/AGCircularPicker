@@ -21,8 +21,8 @@ open class AGCircularPicker: UIView {
     public var options: Array<AGCircularPickerOption> = [] {
         didSet {
             currentValues = []
-            for _ in options {
-                currentValues.append((0, UIColor.white))
+            for option in options {
+                currentValues.append((option.valueOption.initialValue, UIColor.white))
             }
             collectionView.reloadData()
         }

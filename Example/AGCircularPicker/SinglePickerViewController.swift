@@ -19,7 +19,7 @@ class SinglePickerViewController: UIViewController {
         let valueOption = AGCircularPickerValueOption(minValue: 0, maxValue: 100)
         let titleOption = AGCircularPickerTitleOption(title: "volume")
         let option = AGCircularPickerOption(valueOption: valueOption, titleOption: titleOption)
-        pickerView.setupPicker(delegate: self, option: option)
+        pickerView.setupPicker(delegate: self, option: option, value: 50)
     }
     
     @IBAction func close(_ sender: Any) {
