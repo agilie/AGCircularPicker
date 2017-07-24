@@ -38,6 +38,7 @@ open class AGCircularPickerView: UIView {
                 minValue = opt.minValue
                 maxValue = opt.maxValue
                 rounds = opt.rounds
+                currentValue = CGFloat(opt.initialValue)
                 gradientColors = opt.gradientColors
                 gradientLocations = opt.gradientLocations
                 gradientAngle = opt.gradientAngle

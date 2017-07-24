@@ -49,6 +49,10 @@ extension AGCircularPickerOption {
     public var rounds: Int {
         return valueOption.rounds
     }
+    
+    public var initialValue: Int {
+        return valueOption.initialValue
+    }
 
     public var title: String? {
         return titleOption?.title
