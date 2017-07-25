@@ -106,14 +106,14 @@ open class AGCircularPickerView: UIView {
         return pointInsideOuterCircle && !pointInsideInnerCircle
     }
 
-    public func setupPicker(delegate: AGCircularPickerViewDelegate?, option: AGCircularPickerOption, value: Int = 0) {
+    public func setupPicker(delegate: AGCircularPickerViewDelegate?, option: AGCircularPickerOption, value: Int? = nil) {
         setupPicker(delegate: delegate, option: option, index: 0, value: value)
     }
 
-    public func setupPicker(delegate: AGCircularPickerViewDelegate?, option: AGCircularPickerOption, index: Int, value: Int = 0) {
+    public func setupPicker(delegate: AGCircularPickerViewDelegate?, option: AGCircularPickerOption, index: Int, value: Int? = nil) {
         self.index = index
         self.option = option
-        currentValue = CGFloat(value)
+        currentValue = CGFloat(value ?? option.initialValue)
         self.delegate = delegate
         setupView()
         setNeedsDisplay()
