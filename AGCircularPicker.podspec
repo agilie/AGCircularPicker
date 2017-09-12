@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AGCircularPicker'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'AGCircularPicker is helpful for creating a controller aimed to manage any calculated parameter'
 
 # This description is used to generate tags and improve search results.
