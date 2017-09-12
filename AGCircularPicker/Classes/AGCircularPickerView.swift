@@ -24,11 +24,11 @@ open class AGCircularPickerView: UIView {
     public var isEnabled: Bool = true
     public var delegate: AGCircularPickerViewDelegate? {
         didSet {
-            delegate?.circularPickerViewDidEndSetupWith(currentValue.round(), color: currentColor ?? UIColor.white, index: index)
+            delegate?.circularPickerViewDidEndSetupWith(currentValue.round(minValue), color: currentColor ?? UIColor.white, index: index)
         }
     }
     public var value: AGColorValue {
-        return AGColorValue(value: currentValue.round(), color: currentColor ?? UIColor.white)
+        return AGColorValue(value: currentValue.round(minValue), color: currentColor ?? UIColor.white)
     }
     
     //MARK: Private vars
@@ -161,7 +161,7 @@ open class AGCircularPickerView: UIView {
             let centerPoint = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
             path.rotate(centerPoint: centerPoint, angle: angle)
             currentColor = gradientImageView.layer.colorOfPoint(point: path.currentPoint)
-            delegate?.circularPickerViewDidEndSetupWith(currentValue.round(), color: currentColor ?? UIColor.white, index: index)
+            delegate?.circularPickerViewDidEndSetupWith(currentValue.round(minValue), color: currentColor ?? UIColor.white, index: index)
         }
     }
     
@@ -219,7 +219,7 @@ open class AGCircularPickerView: UIView {
             }
             
             currentColor = gradientImageView.layer.colorOfPoint(point: correctedPoint)
-            delegate?.circularPickerViewDidChangeValue(currentValue.round(), color: currentColor ?? UIColor.black, index: index)
+            delegate?.circularPickerViewDidChangeValue(currentValue.round(minValue), color: currentColor ?? UIColor.black, index: index)
         }
     }
     
@@ -265,7 +265,7 @@ open class AGCircularPickerView: UIView {
         let sourceRange = (source.max - source.min) / CGFloat(source.rounds)
         let destinationRange = (destination.max - destination.min) / CGFloat(destination.rounds)
         let scaledValue = source.min + (value - source.min).truncatingRemainder(dividingBy: sourceRange)
-        let newValue =  (((scaledValue - source.min) * destinationRange) / sourceRange) + destination.min
+        let newValue =  (((scaledValue - source.min) * destinationRange) / sourceRange)
         
         return  newValue
     }

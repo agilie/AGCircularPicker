@@ -32,9 +32,9 @@ extension UIView {
 
 extension CGFloat {
     
-    func round() -> Int {
-        if self > 0 && self < 0.5 {
-            return 0
+    func round(_ minValue: Int) -> Int {
+        if self > CGFloat(minValue) && self < CGFloat(minValue) + 0.5 {
+            return minValue
         }
         return Int(ceil(self))
     }
