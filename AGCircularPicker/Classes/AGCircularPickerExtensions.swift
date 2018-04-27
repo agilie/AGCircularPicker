@@ -219,7 +219,7 @@ extension CALayer {
                                     blue: blue / 255.0,
                                     alpha: alpha / 255.0)
         
-        pixel.deallocate(capacity: 4)
+        pixel.deallocate()
         return color
     }
     
