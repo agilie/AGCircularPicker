@@ -147,7 +147,7 @@ public struct AGCircularPickerColorOption {
 public struct AGCircularPickerTitleOption {
     
     static let defaultColor = UIColor.white
-    static let defaultFont = UIFont.systemFont(ofSize: 25, weight: UIFontWeightHeavy)
+    static let defaultFont = UIFont.systemFont(ofSize: 25, weight: .heavy)
     
     var title: String? = nil
     var titleColor: UIColor? = nil

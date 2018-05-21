@@ -17,7 +17,7 @@ open class AGCircularPickerCell: UICollectionViewCell {
     
     lazy var titleLabel: UILabel = {
         let label = UILabel(frame: self.bounds)
-        label.font = UIFont.systemFont(ofSize: 22, weight: UIFontWeightBlack)
+        label.font = UIFont.systemFont(ofSize: 22, weight: .black)
         label.textColor = UIColor.white
         return label
     }()
